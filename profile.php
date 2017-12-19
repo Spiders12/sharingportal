@@ -1,3 +1,6 @@
+<?php 
+$a="fggf";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +33,19 @@
 </div>
 </nav>
 <div class="content">
+	<div class="topbanner">
+		<img src="background.jpg" class="toppic"></div>
+<div class="row">
+<div class="col-md-3 sidebar">
+	<div class="profilepic w3-card">
+		<img src="images7.jpg" class="img-circle profile">
+	</div>
+	<h1><?php echo"$a"; ?></h1>
 </div>
 
+<div class="col-md-9 mainbar">
+</div>
+</div>
+</div>
 </body>
 </html>

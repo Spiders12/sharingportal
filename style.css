@@ -1,3 +1,30 @@
 *{
 	font: Raleway,Helvetica,Arial,sans-serif;
 }
+.content{
+	background-color: #DDDDDD;
+	margin-top: 50px;
+	height: 1000px;
+}
+.topbanner{
+	height: 600px;
+}
+.toppic{
+	height: 100%;
+	width: 100%;
+
+}
+.sidebar{
+	padding: 50px;
+	color: black;
+
+}
+.profilepic{
+	width: 200px;
+	height: 200px;
+}
+.profile{
+	height: 100%;
+	width: 100%;
+	border: solid white;
+}
