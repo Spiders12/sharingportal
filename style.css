@@ -1,8 +1,10 @@
 *{
-	
+	    font-family: 'Roboto Condensed', sans-serif;
 }
 .content{
-	background-color: #DDDDDD;
+	/*background-color: #DDDDDD;
+*/background-color: #f2f2f2;
+
 	margin-top: 50px;
 	height: 2000px;
 }
@@ -19,6 +21,7 @@
 	color: black;
 	height: 1000px;
 
+
 }
 .profilepic{
 	width: 200px;
@@ -34,17 +37,30 @@
 }
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 .mainbar{
 
 }
-.info{
-	color: black;
+table,td{
+	border: 1px solid black;
+	padding: 5px;
+
 }
+td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+.menu{
+	background-color: white;
+}
+.iconmenu{
+	float: right;
+	margin-right: 5px;}
