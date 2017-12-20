@@ -1,20 +1,23 @@
-<html>
-<head>
-	
-	<!-- // in CSS  -->
-	<style type="text/css">
-.bg1 
+<?php
+session_start();
+$db=new MYSQLi("localhost","root","","interview");
+if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-	background-color:black; 
-  background-image: url(11.jpg);
-   /*background-repeat: no-repeat;*/
-   background-size:1300px 800px; 
-}
-
-
-</style>
-</head>
-<body class="bg1">
+	$email=$_POST["email"];
+	$password=$_POST["password"];
 	
-</body>
-</html>
+	$sql=" SElECT * FROM signup WHERE email='$email' AND password='$password'";
+	$result=mysqli_query($db,$sql);
+	if(mysqli_num_rows($result)==1)
+	{
+	
+		$_SESSION['message']="You are now logged in";
+		$_SESSION['name']=$name;
+			
+		header("location:home.php");
+		}
+		else{
+			echo "<script>alert('Incorrect username/password');window.location='main.php';</script>";
+		}
+}
+?>
