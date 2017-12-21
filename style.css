@@ -6,7 +6,7 @@
 */background-color: #f2f2f2;
 
 	margin-top: 50px;
-	height: 2000px;
+	
 }
 .topbanner{
 	height: 600px;
@@ -18,7 +18,7 @@
 }
 .sidebar{
 	padding: 50px;
-	height: 1000px;
+	
 	color: black;
 
 }
@@ -63,6 +63,7 @@ td{
 	padding-right: 5px;
 }
 .menu{
+	
 	background-color: white;
 }
 .iconmenu{
@@ -94,4 +95,15 @@ td{
 		padding: 8px;
 		border-radius: 5px;
 		border: none;
+	}
+	.sidebar{
+		position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+	}
+	.post{
+		background-color: white;
+		padding: 10px;
+		margin-top: 50px;
+		border-radius: 5px;
 	}

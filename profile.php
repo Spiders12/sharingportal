@@ -11,24 +11,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script type="text/javascript">
-  var fixmeTop = $('.#fixme').offset().top;       // get initial position of the element
+  $(function(){ /* to make sure the script runs after page load */
 
-$(window).scroll(function() {                  // assign scroll event listener
-
-    var currentScroll = $(window).scrollTop(); // get current position
-
-    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-        $('.#fixme').css({                      // scroll to that element or below it
-            position: 'fixed',
-            top: '0',
-            left: '0'
-        });
-    } else {                                   // apply position: static
-        $('.#fixme').css({                      // if you scroll above it
-            position: 'static'
-        });
+  $('.post').each(function(event){ /* select all divs with the item class */
+  
+    var max_length = 150; /* set the max content length before a read more link will be added */
+    
+    if($(this).html().length > max_length){ /* check for content length */
+      
+      var short_content   = $(this).html().substr(0,max_length); /* split the content in two parts */
+      var long_content  = $(this).html().substr(max_length);
+      
+      $(this).html(short_content+
+             '<a href="#" class="read_more"><br/>Read More</a>'+
+             '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
+             
+      $(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
+ 
+        event.preventDefault(); /* prevent the a from changing the url */
+        $(this).hide(); /* hide the read more button */
+        $(this).parents('.post').find('.more_text').show(); /* show the .more_text span */
+     
+      });
+      
     }
-
+    
+  });
+ 
+ 
 });</script>
 </head>
 <body>
@@ -99,7 +109,18 @@ $(window).scroll(function() {                  // assign scroll event listener
 </div>
 <div class="col-md-7 mainbar">
   <div class="textbox card"><textarea class="profilepost" placeholder="Write something about you........."></textarea></div>
-	
+	  <?php 
+    $i=10;
+    while($i!=0){
+      echo "<div class='post card'><p>This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.
+      This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.
+      This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.</p>
+      <p>This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.
+      This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.
+      This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.
+      This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.</p></div>";
+      $i--;
+    } ?>
 </div>
 <div class="col-md-2"></div>
 </div>
