@@ -1,23 +1,23 @@
 
 .toppic{
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 
 }
 
 
 
 .profilepic{
-	width: 75%;
-	height: 200px;
-	border-radius: 5px;
-	margin-left: 10%;
-	}
+  width: 75%;
+  height: 200px;
+  border-radius: 5px;
+  margin-left: 10%;
+  }
 .profile{
-	height: 100%;
-	width: 100%;
-	border-radius: 5px;
-	
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  
 }
 .card {
     /* Add shadows to create the "card" effect */
@@ -35,21 +35,58 @@
 
 }
 table,td{
-	border: 1px solid black;
-	padding: 5px;
+  border: 1px solid black;
+  padding: 5px;
 
 }
 td{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
 .menu{
-	background-color: white;
+  background-color: white;
+}
+.sidebar{
+  padding: 50px;
+  height: 1000px;
+  color: black;
+
 }
 .iconmenu{
-	float: right;
-	margin-right: 5px;}
+  float: right;
+  margin-right: 5px;}
+  a{
+    text-decoration: none;
+    color: #FF6600;
+  }
+  a:hover
+  {
+    text-decoration: none;
+  }
+  .active1:hover{
+    background-color: #DDDDDD;
+
+
+  }
+  .active12{
+    background-color: #333333;
+    color: #FF6600;
+  }
+  i{
+    color: black;
+  }
+  .profilepost{
+    width: 100%;
+    height: 90px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  h3{
+    color: orange;
+  }
+
 
 html {
   box-sizing: border-box;
@@ -92,7 +129,7 @@ body {
   /*max-width: 600px;*/
   /*margin-right: auto;*/
   margin-left: 100px;
-  /*margin-top: 60px;*/
+  margin-top: 60px;
   margin-bottom: 200px;
 }
 .content {

@@ -61,50 +61,43 @@ $(window).scroll(function() {                  // assign scroll event listener
     <div class="info">
   <h2><?php  
   echo "Vaibhav Raizada"; ?></h2></div>
-  <table style="width:100%;" >
-      <tr>
+  <div class="menu card" id="fixme" >
+    <table style="width:100%;" >
+      <tr class="active1 active12">
         <td >
-          <h3>Profile<i class="iconmenu fa fa-drivers-license"></i> </h3>
+          <a href="profile.php"><h3>Profile<i class="iconmenu fa fa-drivers-license"></i> </h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>Write Post<i class="iconmenu fa fa-plus-square"></i></h3>
+          <a href="#"><h3>Write Post<i class="iconmenu fa fa-plus-square"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>Your Posts<i class="iconmenu fa fa-file-text"></i></h3>
+          <a href="#"><h3>Your Posts<i class="iconmenu fa fa-file-text"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>About us<i class="iconmenu fa fa-group"></i></h3>
+          <a href="#"><h3>About us<i class="iconmenu fa fa-group"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td >
-          <h3>Logout<i class="iconmenu fa fa-power-off"></i></h3>
+          <a href="#"><h3>Logout<i class="iconmenu fa fa-power-off"></i></h3></a>
         </td>
       </tr>
 
     </table>
+  </div>
 
      <h3>Sidebar</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab maxime fugiat perspiciatis.</p>
     </div>
   
   <div class="content">
-   <h1>Scroll Down!</h1>
-<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus suscipit blanditiis delectus quos, soluta fuga voluptatem, facere inventore neque voluptate quaerat unde laboriosam molestiae repellat, sapiente accusamus cumque! Ipsam, illo!</p> 
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus suscipit blanditiis delectus quos, soluta fuga voluptatem, facere inventore neque voluptate quaerat unde laboriosam molestiae repellat, sapiente accusamus cumque! Ipsam, illo!</p> 
-     <div style="width: 100%;background-color: gray;float:left;padding-left: 10px;" id="navbarr">
+    <div style="width: 100%;background-color: gray;float:left;padding-left: 10px;" id="navbarr">
           <h4><i class="fa fa-user-circle" style="font-size:40px;"></i>Shekhar kumar</h4><hr>
           <p>r sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
@@ -117,6 +110,16 @@ $(window).scroll(function() {                  // assign scroll event listener
     }
     </script>    
      </div>
+   <h1>Scroll Down!</h1>
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus suscipit blanditiis delectus quos, soluta fuga voluptatem, facere inventore neque voluptate quaerat unde laboriosam molestiae repellat, sapiente accusamus cumque! Ipsam, illo!</p> 
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus suscipit blanditiis delectus quos, soluta fuga voluptatem, facere inventore neque voluptate quaerat unde laboriosam molestiae repellat, sapiente accusamus cumque! Ipsam, illo!</p> 
+     
      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero, maxime nulla dolore iure voluptatem itaque. Nisi commodi ut consectetur beatae mollitia. Ab, maxime quisquam ipsa, quibusdam itaque et eius.</p>  
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.</p> 
