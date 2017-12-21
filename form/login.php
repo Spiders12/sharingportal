@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 		$_SESSION['message']="You are now logged in";
 		$_SESSION['name']=$name;
 			
-		header("location:home.php");
+		header("location:/shearingportal/profile.php");
 		}
 		else{
 			echo "<script>alert('Incorrect username/password');window.location='/form/';</script>";
