@@ -18,8 +18,8 @@
 }
 .sidebar{
 	padding: 50px;
-	color: black;
 	height: 1000px;
+	color: black;
 
 }
 
@@ -49,6 +49,7 @@
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 .mainbar{
+	padding: 50px; 
 
 }
 table,td{
@@ -67,3 +68,30 @@ td{
 .iconmenu{
 	float: right;
 	margin-right: 5px;}
+	a{
+		text-decoration: none;
+		color: #FF6600;
+	}
+	a:hover
+	{
+		text-decoration: none;
+	}
+	.active1:hover{
+		background-color: #DDDDDD;
+
+
+	}
+	.active12{
+		background-color: #333333;
+		color: #FF6600;
+	}
+	i{
+		color: black;
+	}
+	.profilepost{
+		width: 100%;
+		height: 90px;
+		padding: 8px;
+		border-radius: 5px;
+		border: none;
+	}

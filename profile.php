@@ -68,38 +68,40 @@ $(window).scroll(function() {                  // assign scroll event listener
   
   <div class="menu card" id="fixme" >
     <table style="width:100%;" >
-      <tr>
+      <tr class="active1 active12">
         <td >
-          <h3>Profile<i class="iconmenu fa fa-drivers-license"></i> </h3>
+          <a href="profile.php"><h3>Profile<i class="iconmenu fa fa-drivers-license"></i> </h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>Write Post<i class="iconmenu fa fa-plus-square"></i></h3>
+          <a href="#"><h3>Write Post<i class="iconmenu fa fa-plus-square"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>Your Posts<i class="iconmenu fa fa-file-text"></i></h3>
+          <a href="#"><h3>Your Posts<i class="iconmenu fa fa-file-text"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td>
-          <h3>About us<i class="iconmenu fa fa-group"></i></h3>
+          <a href="#"><h3>About us<i class="iconmenu fa fa-group"></i></h3></a>
         </td>
       </tr>
-      <tr>
+      <tr class="active1">
         <td >
-          <h3>Logout<i class="iconmenu fa fa-power-off"></i></h3>
+          <a href="#"><h3>Logout<i class="iconmenu fa fa-power-off"></i></h3></a>
         </td>
       </tr>
 
     </table>
   </div>
 </div>
-<div class="col-md-9 mainbar">
+<div class="col-md-7 mainbar">
+  <div class="textbox card"><textarea class="profilepost" placeholder="Write something about you........."></textarea></div>
 	
 </div>
+<div class="col-md-2"></div>
 </div>
 </div>
 </body>
